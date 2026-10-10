@@ -1,6 +1,6 @@
 # KubeCon + CloudNativeCon EU 2027, Barcelona: Red: Taming the Agent Sandbox
 
-Status: draft v1, not submitted. Target: KubeCon + CloudNativeCon EU 2027, Barcelona,
+Status: draft v2, not submitted. Abstract cut to 947 characters for the 1,000-character field. Target: KubeCon + CloudNativeCon EU 2027, Barcelona,
 2027-03-15 to 18. Track: Security. Format: 30-minute session presentation. Speaker:
 Michael Forrester. CFP closes 2026-10-11, 23:59 CEST.
 
@@ -10,15 +10,15 @@ Red: Taming the Agent Sandbox
 
 ## Abstract
 
-Your coding agent runs in a Kubernetes sandbox. gVisor sits between it and the node, every task gets a fresh pod, and the security review signed off. Then a prompt hidden in a README asks the agent to tidy the repository's settings, and it writes one hook into `.claude/settings.json`. Nothing escapes the sandbox. The next developer to open that repository runs the hook on their laptop.
+Your coding agent runs in a Kubernetes sandbox with gVisor underneath. A prompt hidden in a README gets it to write one hook into `.claude/settings.json`. Nothing escapes the sandbox. The next developer to open the repo runs the hook.
 
-That is not hypothetical. The best-known coding-agent sandbox escapes of 2026 did not break a hypervisor. Cymulate's configuration escapes, Wiz's GhostApproval symlinks, Pillar Security's week of sandbox escapes and DNS tunneling out of AWS AgentCore all went around the sandbox: through config files, symlinks, a reachable Docker socket, allowlisted git commands and DNS. Meanwhile platform teams are standardizing on kubernetes-sigs/agent-sandbox, now at v1.0, with gVisor or Kata underneath.
+The best-known coding-agent escapes of 2026 (Cymulate, Wiz GhostApproval, Pillar Security, AWS AgentCore DNS tunneling) never broke a hypervisor. They went around it through config files, symlinks, Docker sockets, allowlisted commands and DNS.
 
-In this session, Michael Forrester red-teams that stack. Each 2026 technique is replayed against two agent-sandbox clusters. One runs the default template. The other is hardened with a gVisor or Kata RuntimeClass, user namespaces, Kyverno admission, Cilium FQDN default-deny with DNS locked to the cluster, an Envoy egress proxy that holds the real credentials so the sandbox never does, SPIRE workload identity and Falco. A live scoreboard records, for every attack, which layer stopped it, which only detected it, and which missed it. The scores come from the runs, including the ones that make the hardened cluster look bad.
+Michael Forrester replays each technique against two kubernetes-sigs/agent-sandbox clusters: the default template, and one hardened with gVisor or Kata, user namespaces, Kyverno, Cilium FQDN egress, an Envoy credential proxy, SPIRE and Falco. A live scoreboard shows which layer stopped, detected or missed every attack.
 
-Attendees leave knowing which controls earn their place around an agent sandbox, which gaps are still open upstream (identity and network policy bound at claim time are both on the agent-sandbox roadmap as planned), and with the attack harness, policies and raw results to replay against their own clusters.
+Attendees leave with the harness, policies and raw results to rerun on their own clusters.
 
-The bars of the cage held every time. This talk is about the door.
+The cage held every time. This talk is about the door.
 
 ## Benefits to the Ecosystem
 
@@ -76,9 +76,7 @@ record: `research/2026-10-11-verification.md`.
 
 Open items:
 
-- Sessionize character limits are not published. Check the description against the form before pasting (draft is about 330 words).
 - The CFP page asks for the description in third-person sentences. The draft opens in second person ("Your coding agent") as the house style does and refers to Michael in the third person. Decide before pasting.
-- The closing line is optional. Cut it if the form is tight.
 - Prior recording: pick one (SREday Austin or LLMday Austin, May 2026).
 - Co-presenter: none listed. The format allows two.
 - Responsible replay: only public techniques, against patched releases or isolated lab clusters with pinned vulnerable versions. Coordinate anything new with the affected project before March.
