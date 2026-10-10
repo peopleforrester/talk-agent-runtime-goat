@@ -25,16 +25,14 @@ commands, DNS exfiltration) against a default and a hardened agent-sandbox, and 
 each CNCF layer as stopped, detected, or missed. Likely track: Security.
 
 Open decisions for Michael:
-1. Main CFP (closes 2026-10-11 23:59 CEST) or a co-located event (closes 2026-10-18).
-   This is the third proposal; only one non-panel session can be accepted at the main
-   event.
-2. Track: Security or Agentic AI.
-3. Co-presenter, if any (end user or agent-sandbox maintainer).
+1. Track: Security or Agentic AI.
+2. Co-presenter, if any (end user or agent-sandbox maintainer).
 
 Next steps:
-1. Draft the abstract in `abstract/kubecon-eu-2027-session.md`.
-2. Verify the claims the abstract depends on against primary sources.
-3. Check Sched for the "Detonation and Isolation" abstract, the main overlap risk.
+1. Michael reviews `abstract/kubecon-eu-2027-session.md` (draft v1) and submits on
+   Sessionize by 2026-10-11 23:59 CEST.
+2. Research revalidated 2026-10-11: `research/2026-10-11-verification.md` supersedes the
+   2026-10-10 files wherever they disagree.
 
 ## Branch & Tests
 - Branch: staging
@@ -44,3 +42,4 @@ Next steps:
 ## Phase History
 - 2026-10-10T23:08:00Z 1.1 · repo initialized, research imported
 - 2026-10-10T23:08:00Z 1.1 → 1.2 research complete, planning the abstract
+- 2026-10-11T00:30:00Z 1.2 · research revalidated, abstract draft v1 written

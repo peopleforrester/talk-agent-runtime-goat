@@ -27,9 +27,6 @@ Sibling talks, kept separate in scope:
 | Cloud Native Rejekts EU 2027 CFP | 2026-12-07 to 2027-01-03 |
 | Event | 2027-03-15 to 2027-03-18, Barcelona |
 
-CFP rule: a speaker may be listed on at most three proposals and selected for one
-non-panel session per event.
-
 ## Layout
 
 | Path | What |
@@ -38,6 +35,8 @@ non-panel session per event.
 | `research/2026-10-10-cfp-landscape-and-concepts.md` | CNCF stack by layer, agent-sandbox roadmap, practitioner pain points, CFP logistics, six talk concepts ranked |
 | `research/2026-10-10-competing-talks.md` | Competing talks March 2026 to March 2027 and the overlap matrix by angle |
 | `research/2026-10-10-stack-and-talk-ideas-summary.md` | One-page summary of the stack and the five talk ideas |
+| `research/2026-10-11-verification.md` | Primary-source recheck of every claim the abstract uses; supersedes the 2026-10-10 files where they disagree |
+| `abstract/kubecon-eu-2027-session.md` | Session proposal: title, abstract, benefits, projects, committee notes, unsubmitted source table |
 | `PROJECT_STATE.md` | Current phase, open decisions, next steps |
 | `decisions.md` | Append-only decision log |
 
