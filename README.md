@@ -1,4 +1,4 @@
-# Clearing the Runtime Confusion: Finding the Ultimate Runtime
+# Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT?
 
 Working repo for Michael Forrester's third KubeCon + CloudNativeCon Europe 2027
 (Barcelona) submission. This repo is the primary home for the agent-substrate talk:

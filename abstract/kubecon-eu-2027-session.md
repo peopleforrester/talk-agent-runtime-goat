@@ -1,4 +1,4 @@
-# KubeCon + CloudNativeCon EU 2027, Barcelona: Clearing the Runtime Confusion: Finding the Ultimate Runtime
+# KubeCon + CloudNativeCon EU 2027, Barcelona: Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT?
 
 Status: draft v6, runtime bake-off, not submitted. Description is 998 characters against the 1,000-character Sessionize limit. Target: KubeCon + CloudNativeCon EU 2027, Barcelona,
 2027-03-15 to 18. Track: Security. Format: 30-minute session presentation. Speaker:
@@ -6,7 +6,7 @@ Michael Forrester. CFP closes 2026-10-11, 23:59 CEST.
 
 ## Title
 
-Clearing the Runtime Confusion: Finding the Ultimate Runtime
+Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT?
 
 ## Description (Sessionize field, max 1,000 characters)
 
@@ -25,9 +25,9 @@ For platform and security engineers choosing a substrate for coding agents. Atte
 
 ## Value to the community
 
-Coding agents are moving off laptops and onto Kubernetes, and kubernetes-sigs/agent-sandbox, which reached v1.0 in August 2026, is the SIG Apps project built to host them. Every team adopting it has to pick a RuntimeClass, usually on the strength of vendor claims about isolation, and microVMs cost the most to run.
+The title is deliberately glib. Teams choosing a runtime for coding agents want one answer: the GOAT runtime that is secure enough to stop thinking about. There isn't one, and this session takes that idea apart with data. The scoreboard shows the ranking changing with the attack, and it shows that no single layer, runtime or policy, stops everything on its own.
 
-The best-known coding-agent escapes of 2026 went around the isolation boundary, through config files, symlinks, sockets, allowlisted commands and DNS. What a microVM buys over gVisor or runc is therefore an open and expensive question. This session answers it with measurements: the same attacks against each runtime under the same agent-sandbox templates, scored stopped, detected or missed, first with the runtime alone and then with Kyverno, Cilium and Falco added. The attack set is refreshed with escapes disclosed up to the event, so the results are current in March 2027.
+Coding agents are moving off laptops and onto Kubernetes, and kubernetes-sigs/agent-sandbox, which reached v1.0 in August 2026, is the SIG Apps project built to host them. Every team adopting it has to pick a RuntimeClass, usually on the strength of vendor claims about isolation, and microVMs cost the most to run. The best-known coding-agent escapes of 2026 went around the isolation boundary, through config files, symlinks, sockets, allowlisted commands and DNS, while kernel and runtime CVEs go through it. The session measures both against runc, gVisor and Kata microVMs under the same agent-sandbox templates, scored stopped, detected or missed, first with the runtime alone and then with Kyverno, Cilium and Falco added. Attendees leave knowing which runtime buys what, and which attacks no runtime stops without a policy layer. The attack set is refreshed with escapes disclosed up to the event, so the results are current in March 2027.
 
 The harness, SandboxTemplates, policies and raw results are published in a public repository before the talk, so anyone can rerun the scoreboard on their own cluster or add a technique. All techniques are public and run against isolated lab clusters, and gaps found in agent-sandbox are filed upstream with SIG Apps. gVisor and Kata Containers, the two strongest runtime options, are open source projects outside the CNCF, and the session says so.
 

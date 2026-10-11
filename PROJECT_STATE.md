@@ -18,7 +18,7 @@ Approved: pending
 None yet.
 
 ## Current Plan
-Talk: "Clearing the Runtime Confusion: Finding the Ultimate Runtime", KubeCon + CloudNativeCon EU 2027, Barcelona.
+Talk: "Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT?", KubeCon + CloudNativeCon EU 2027, Barcelona.
 Concept A from `research/2026-10-10-cfp-landscape-and-concepts.md`: replay the 2026
 coding-agent escape classes (config files, symlinks, Docker socket, allowlisted
 commands, DNS exfiltration) against a default and a hardened agent-sandbox, and score

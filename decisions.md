@@ -35,3 +35,7 @@ Michael's intent was a runtime bake-off: Claude Code on runc, gVisor and Kata mi
 ## 2026-10-11T15:54:26Z · 1.2 · Title changed
 
 Michael chose "Clearing the Runtime Confusion: Finding the Ultimate Runtime", replacing "Red Teaming the Agent Sandbox: MicroVMs, Containers and More".
+
+## 2026-10-11T15:57:24Z · 1.2 · Title changed to the GOAT framing
+
+Michael chose "Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT?". The title is intentionally ironic: the talk argues there is no single best runtime and no single sufficient layer. Value to the community now states that up front.
