@@ -1,6 +1,6 @@
 # KubeCon + CloudNativeCon EU 2027, Barcelona: Red Teaming the Agent Sandbox: MicroVMs, Containers and More
 
-Status: draft v4, runtime bake-off, not submitted. Description is 950 characters against the 1,000-character Sessionize limit. Target: KubeCon + CloudNativeCon EU 2027, Barcelona,
+Status: draft v5, runtime bake-off, not submitted. Description is 1026 characters against the 1,000-character Sessionize limit. Target: KubeCon + CloudNativeCon EU 2027, Barcelona,
 2027-03-15 to 18. Track: Security. Format: 30-minute session presentation. Speaker:
 Michael Forrester. CFP closes 2026-10-11, 23:59 CEST.
 
@@ -10,11 +10,17 @@ Red Teaming the Agent Sandbox: MicroVMs, Containers and More
 
 ## Description (Sessionize field, max 1,000 characters)
 
-Your coding agent runs in a kubernetes-sigs/agent-sandbox Sandbox, the SIG Apps project that reached v1.0 in August 2026. Its SandboxTemplate sets the RuntimeClass: runc, gVisor, or a Kata Containers microVM on QEMU or Firecracker. MicroVMs cost the most. What do they actually stop?
+You've probably heard that containers aren't the most secure boundary for an agent. You keep hearing about microVMs, gVisor and other variations, but microVMs cost the most and containers are the Kubernetes default. What do microVMs actually stop that containers don't?
 
-Michael Forrester runs Claude Code on each runtime and replays the public coding-agent escapes of 2026: Cymulate's config-file hooks, Wiz GhostApproval's symlinks, Pillar Security's Docker socket and allowlisted git, and AgentCore DNS tunneling. Patched kernel and runtime CVEs that go through the boundary instead of around it run alongside. A live scoreboard shows which runtime stopped, detected or missed each attack, first alone, then with Kyverno, Cilium FQDN egress and Falco added.
+In this session we run Claude Code in agent-sandbox on each runtime and replay the best-known public coding-agent escapes of 2026:
+- Config-file hooks (Cymulate)
+- Symlinks (Wiz GhostApproval)
+- A Docker socket and allowlisted git (Pillar Security)
+- DNS tunneling (AWS AgentCore)
 
-For platform and security engineers choosing a substrate for coding agents. Attendees leave with the harness, SandboxTemplates and raw results to rerun on their own clusters.
+Patched kernel and runtime CVEs that go through the boundary instead of around it run alongside. A live scoreboard shows which runtime stopped, detected or missed each attack, first alone, then with Kyverno, Cilium FQDN egress and Falco added.
+
+For platform and security engineers choosing a substrate for coding agents. Attendees leave with the harness, SandboxTemplates and raw results to rerun on their own clusters and see whether these attacks would get through there.
 
 ## Value to the community
 
