@@ -65,7 +65,7 @@ Kubernetes (kubernetes-sigs/agent-sandbox, RuntimeClass, user namespaces), Kyver
 
 kubernetes-sigs/agent-sandbox, the Kubernetes SIG Apps project every runtime in the session runs under: https://github.com/kubernetes-sigs/agent-sandbox
 
-Once the repository is public, add: Talk repository, with the research, the attack catalog and its primary sources, and the harness and SandboxTemplates as they are built: https://github.com/peopleforrester/talk-agent-runtime-goat
+Talk repository, with the research, the attack catalog and its primary sources, and the harness and SandboxTemplates as they are built: https://github.com/peopleforrester/talk-agent-runtime-goat
 
 ## Co-speakers
 
