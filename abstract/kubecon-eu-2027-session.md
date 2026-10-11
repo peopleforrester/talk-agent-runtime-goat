@@ -1,26 +1,24 @@
-# KubeCon + CloudNativeCon EU 2027, Barcelona: Red Teaming the Agent Sandbox: Isolating Agents on Kubernetes
+# KubeCon + CloudNativeCon EU 2027, Barcelona: Red Teaming the Agent Sandbox: MicroVMs, Containers and More
 
-Status: draft v3, not submitted. Description is 977 characters against the 1,000-character Sessionize limit. Target: KubeCon + CloudNativeCon EU 2027, Barcelona,
+Status: draft v4, runtime bake-off, not submitted. Description is 950 characters against the 1,000-character Sessionize limit. Target: KubeCon + CloudNativeCon EU 2027, Barcelona,
 2027-03-15 to 18. Track: Security. Format: 30-minute session presentation. Speaker:
 Michael Forrester. CFP closes 2026-10-11, 23:59 CEST.
 
 ## Title
 
-Red Teaming the Agent Sandbox: Isolating Agents on Kubernetes
+Red Teaming the Agent Sandbox: MicroVMs, Containers and More
 
 ## Description (Sessionize field, max 1,000 characters)
 
-Your coding agent runs in a Kubernetes sandbox with gVisor underneath. A prompt hidden in a README gets it to write one hook into `.claude/settings.json`. Nothing escapes the sandbox. The next developer to open the repo runs the hook.
+Your coding agent runs in a kubernetes-sigs/agent-sandbox Sandbox, the SIG Apps project that reached v1.0 in August 2026. Its SandboxTemplate sets the RuntimeClass: runc, gVisor, or a Kata Containers microVM on QEMU or Firecracker. MicroVMs cost the most. What do they actually stop?
 
-The best-known coding-agent escapes of 2026 (Cymulate, Wiz GhostApproval, Pillar Security, AWS AgentCore DNS tunneling) never broke a hypervisor. They went around it through config files, symlinks, Docker sockets, allowlisted commands and DNS.
+Michael Forrester runs Claude Code on each runtime and replays the public coding-agent escapes of 2026: Cymulate's config-file hooks, Wiz GhostApproval's symlinks, Pillar Security's Docker socket and allowlisted git, and AgentCore DNS tunneling. Patched kernel and runtime CVEs that go through the boundary instead of around it run alongside. A live scoreboard shows which runtime stopped, detected or missed each attack, first alone, then with Kyverno, Cilium FQDN egress and Falco added.
 
-Michael Forrester red-teams two kubernetes-sigs/agent-sandbox clusters, replaying each technique against the default template and one hardened with gVisor or Kata, user namespaces, Kyverno, Cilium FQDN egress, an Envoy credential proxy, SPIRE and Falco. A live scoreboard shows which layer stopped, detected or missed every attack.
-
-For platform and security engineers running coding agents on Kubernetes. Attendees leave with the harness, policies and raw results to rerun on their own clusters.
+For platform and security engineers choosing a substrate for coding agents. Attendees leave with the harness, SandboxTemplates and raw results to rerun on their own clusters.
 
 ## Value to the community
 
-Agent sandboxes are being adopted on the strength of the isolation boundary, and the published 2026 escapes show the boundary was rarely the thing that failed. This session gives platform and security teams a reproducible test instead of a reference diagram: a harness that replays publicly disclosed technique classes, two pinned agent-sandbox configurations, and a scoring method that records stopped, detected or missed for each CNCF layer. The harness, Kyverno policies, Cilium network policies, Falco rules and raw results are published in a public repository before the talk, so anyone can rerun the scoreboard against their own cluster or add a technique.
+Teams adopting kubernetes-sigs/agent-sandbox have to pick a RuntimeClass, and the choice is usually made from vendor claims about isolation strength. None of the best-known 2026 coding-agent escapes needed to break the isolation boundary, so the question of what a microVM buys over gVisor or runc is open and costly. This session gives platform and security teams a reproducible answer instead of a reference diagram: a harness that replays publicly disclosed technique classes against each runtime under the same agent-sandbox templates, and a scoring method that records stopped, detected or missed per runtime and per CNCF layer. The harness, Kyverno policies, Cilium network policies, Falco rules and raw results are published in a public repository before the talk, so anyone can rerun the scoreboard against their own cluster or add a technique.
 
 All techniques are public and replayed against patched releases or isolated lab clusters. Gaps the runs expose in agent-sandbox itself are filed upstream with SIG Apps rather than saved for the stage.
 
@@ -42,8 +40,9 @@ No. This is original content for KubeCon EU 2027.
 - Envoy (Graduated)
 - SPIFFE / SPIRE (Graduated)
 - Falco (Graduated)
+- runc (OCI)
 - gVisor (Google, open source, not CNCF)
-- Kata Containers (OpenInfra Foundation, not CNCF)
+- Kata Containers (OpenInfra Foundation, not CNCF), on QEMU and Firecracker
 
 ## Speaker Bio
 
@@ -66,7 +65,7 @@ record: `research/2026-10-11-verification.md`.
 | GhostApproval symlinks | Wiz, 2026-07-08 |
 | Pillar "week of sandbox escapes": Docker socket, allowlisted `git show` | Pillar Security, 2026-07-20 |
 | DNS tunneling out of AWS AgentCore (since remediated, 2026-04-15) | Unit 42 2026-04-07; BeyondTrust 2026-03-16 |
-| None of these broke a hypervisor | All four disclosures above: each abuses files, symlinks, sockets, allowlists or DNS. The 2026 hypervisor and runtime CVEs (Firecracker, Cloud Hypervisor, Kata, KVM Januscape, gVisor) are separate research, not agent escapes |
+| None of these needed to break the isolation boundary | All four disclosures above: each abuses files, symlinks, sockets, allowlists or DNS. The 2026 hypervisor and runtime CVEs (Firecracker, Cloud Hypervisor, Kata, KVM Januscape, gVisor) are separate research, not agent escapes |
 | agent-sandbox at v1.0 | v1.0.0 2026-08-28; latest v1.0.6 2026-10-08 |
 | Claim-time identity and network policy are Planned | agent-sandbox roadmap.md, read 2026-10-11 |
 | "Prevents escape even with root access" | Platform-First AI Agent Security abstract, KubeCon NA 2026 schedule |

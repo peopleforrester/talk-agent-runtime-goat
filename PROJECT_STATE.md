@@ -18,7 +18,7 @@ Approved: pending
 None yet.
 
 ## Current Plan
-Talk: "Red Teaming the Agent Sandbox: Isolating Agents on Kubernetes", KubeCon + CloudNativeCon EU 2027, Barcelona.
+Talk: "Red Teaming the Agent Sandbox: MicroVMs, Containers and More", KubeCon + CloudNativeCon EU 2027, Barcelona.
 Concept A from `research/2026-10-10-cfp-landscape-and-concepts.md`: replay the 2026
 coding-agent escape classes (config files, symlinks, Docker socket, allowlisted
 commands, DNS exfiltration) against a default and a hardened agent-sandbox, and score
