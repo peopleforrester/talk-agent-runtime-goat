@@ -1,6 +1,6 @@
 # KubeCon + CloudNativeCon EU 2027, Barcelona: Red Teaming the Agent Sandbox: MicroVMs, Containers and More (Sessionize fields)
 
-Status: draft v5, runtime bake-off, 30-minute session, not submitted. Field order follows the Sessionize form. Description limit: 1,000 characters (this text is 995). Source: abstract/kubecon-eu-2027-session.md in peopleforrester/talk-redteaming.
+Status: draft v6, runtime bake-off, 30-minute session, not submitted. Field order follows the Sessionize form. Description limit: 1,000 characters (this text is 998). Source: abstract/kubecon-eu-2027-session.md in peopleforrester/talk-redteaming.
 
 ## Session Title
 
@@ -10,15 +10,16 @@ Red Teaming the Agent Sandbox: MicroVMs, Containers and More
 
 You've probably heard that containers aren't the most secure boundary for an agent. You keep hearing about microVMs and gVisor, but microVMs cost the most and containers are the Kubernetes default. What do microVMs actually stop that containers don't?
 
-In this session we run Claude Code in agent-sandbox on each runtime and replay the best-known public coding-agent escapes of 2026:
+In this session we run Claude Code in agent-sandbox on each runtime and replay the public coding-agent escapes of 2026/2027:
 - Config-file hooks (Cymulate)
 - Symlinks (Wiz GhostApproval)
 - A Docker socket and allowlisted git (Pillar Security)
 - DNS tunneling (AWS AgentCore)
+- Plus new ones that have arisen since Q4 of 2026
 
 Patched kernel and runtime CVEs that go through the boundary instead of around it run alongside. A live scoreboard shows which runtime stopped, detected or missed each attack, first alone, then with Kyverno, Cilium FQDN egress and Falco added.
 
-For platform and security engineers choosing a substrate for coding agents. Attendees leave with the harness, SandboxTemplates and raw results to rerun on their own clusters to see whether these attacks get through.
+For platform and security engineers choosing a substrate for coding agents. Attendees leave with the harness, SandboxTemplates and raw results to rerun on their own clusters.
 
 ## Submitting for
 
