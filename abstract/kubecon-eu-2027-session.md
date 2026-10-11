@@ -25,11 +25,11 @@ For platform and security engineers choosing a substrate for coding agents. Atte
 
 ## Value to the community
 
-Teams adopting kubernetes-sigs/agent-sandbox have to pick a RuntimeClass, and the choice is usually made from vendor claims about isolation strength. None of the best-known 2026 coding-agent escapes needed to break the isolation boundary, so the question of what a microVM buys over gVisor or runc is open and costly. This session gives platform and security teams a reproducible answer instead of a reference diagram: a harness that replays publicly disclosed technique classes against each runtime under the same agent-sandbox templates, and a scoring method that records stopped, detected or missed per runtime and per CNCF layer. The harness, Kyverno policies, Cilium network policies, Falco rules and raw results are published in a public repository before the talk, so anyone can rerun the scoreboard against their own cluster or add a technique.
+Coding agents are moving off laptops and onto Kubernetes, and kubernetes-sigs/agent-sandbox, which reached v1.0 in August 2026, is the SIG Apps project built to host them. Every team adopting it has to pick a RuntimeClass, usually on the strength of vendor claims about isolation, and microVMs cost the most to run.
 
-All techniques are public and replayed against patched releases or isolated lab clusters. Gaps the runs expose in agent-sandbox itself are filed upstream with SIG Apps rather than saved for the stage.
+The best-known coding-agent escapes of 2026 went around the isolation boundary, through config files, symlinks, sockets, allowlisted commands and DNS. What a microVM buys over gVisor or runc is therefore an open and expensive question. This session answers it with measurements: the same attacks against each runtime under the same agent-sandbox templates, scored stopped, detected or missed, first with the runtime alone and then with Kyverno, Cilium and Falco added. The attack set is refreshed with escapes disclosed up to the event, so the results are current in March 2027.
 
-The session is honest about where the CNCF stack ends. agent-sandbox (Kubernetes SIG Apps), Kyverno, Cilium, Envoy, SPIRE and Falco carry the control plane, policy, network, identity and detection layers. The isolation boundary underneath is a RuntimeClass, and its two strongest options, gVisor and Kata Containers, are open source projects outside the CNCF.
+The harness, SandboxTemplates, policies and raw results are published in a public repository before the talk, so anyone can rerun the scoreboard on their own cluster or add a technique. All techniques are public and run against isolated lab clusters, and gaps found in agent-sandbox are filed upstream with SIG Apps. gVisor and Kata Containers, the two strongest runtime options, are open source projects outside the CNCF, and the session says so.
 
 ## Case study?
 
