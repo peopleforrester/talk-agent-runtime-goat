@@ -1,10 +1,10 @@
-# KubeCon + CloudNativeCon EU 2027, Barcelona: Red Teaming the Agent Sandbox: MicroVMs, Containers and More (Sessionize fields)
+# KubeCon + CloudNativeCon EU 2027, Barcelona: Clearing the Runtime Confusion: Finding the Ultimate Runtime (Sessionize fields)
 
 Status: draft v6, runtime bake-off, 30-minute session, not submitted. Field order follows the Sessionize form. Description limit: 1,000 characters (this text is 998). Source: abstract/kubecon-eu-2027-session.md in peopleforrester/talk-redteaming.
 
 ## Session Title
 
-Red Teaming the Agent Sandbox: MicroVMs, Containers and More
+Clearing the Runtime Confusion: Finding the Ultimate Runtime
 
 ## Description
 

@@ -31,3 +31,7 @@ The title is "Red Teaming the Agent Sandbox: Isolating Agents on Kubernetes". Th
 ## 2026-10-11T15:29:02Z · 1.2 · Talk reframed as a runtime bake-off on agent-sandbox
 
 Michael's intent was a runtime bake-off: Claude Code on runc, gVisor and Kata microVMs (QEMU, Firecracker) under kubernetes-sigs/agent-sandbox, scored against the 2026 escapes plus patched through-the-boundary CVEs, then with policy layers added. The default-versus-hardened layer scoreboard was a narrowing introduced in drafting. Title is now "Red Teaming the Agent Sandbox: MicroVMs, Containers and More". "Never broke a hypervisor" replaced by "none needed to break the isolation boundary", since most of those agents were not behind a hypervisor.
+
+## 2026-10-11T15:54:26Z · 1.2 · Title changed
+
+Michael chose "Clearing the Runtime Confusion: Finding the Ultimate Runtime", replacing "Red Teaming the Agent Sandbox: MicroVMs, Containers and More".

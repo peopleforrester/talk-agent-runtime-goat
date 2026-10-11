@@ -1,4 +1,4 @@
-# Red Teaming the Agent Sandbox: MicroVMs, Containers and More
+# Clearing the Runtime Confusion: Finding the Ultimate Runtime
 
 Working repo for Michael Forrester's third KubeCon + CloudNativeCon Europe 2027
 (Barcelona) submission. This repo is the primary home for the agent-substrate talk:
