@@ -1,4 +1,4 @@
-# Red: Taming the Agent Sandbox
+# Red Teaming the Agent Sandbox: Isolating Agents on Kubernetes
 
 Working repo for Michael Forrester's third KubeCon + CloudNativeCon Europe 2027
 (Barcelona) submission. This repo is the primary home for the agent-substrate talk:

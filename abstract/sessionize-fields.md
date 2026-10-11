@@ -1,10 +1,10 @@
-# KubeCon + CloudNativeCon EU 2027, Barcelona: Red: Taming the Agent Sandbox (Sessionize fields)
+# KubeCon + CloudNativeCon EU 2027, Barcelona: Red Teaming the Agent Sandbox: Isolating Agents on Kubernetes (Sessionize fields)
 
 Status: draft v3, 30-minute session, not submitted. Field order follows the Sessionize form. Description limit: 1,000 characters (this text is 977). Source: abstract/kubecon-eu-2027-session.md in peopleforrester/talk-redteaming.
 
 ## Session Title
 
-Red: Taming the Agent Sandbox
+Red Teaming the Agent Sandbox: Isolating Agents on Kubernetes
 
 ## Description
 

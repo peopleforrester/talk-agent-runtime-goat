@@ -1,4 +1,4 @@
-# KubeCon + CloudNativeCon EU 2027, Barcelona: Red: Taming the Agent Sandbox
+# KubeCon + CloudNativeCon EU 2027, Barcelona: Red Teaming the Agent Sandbox: Isolating Agents on Kubernetes
 
 Status: draft v3, not submitted. Description is 977 characters against the 1,000-character Sessionize limit. Target: KubeCon + CloudNativeCon EU 2027, Barcelona,
 2027-03-15 to 18. Track: Security. Format: 30-minute session presentation. Speaker:
@@ -6,7 +6,7 @@ Michael Forrester. CFP closes 2026-10-11, 23:59 CEST.
 
 ## Title
 
-Red: Taming the Agent Sandbox
+Red Teaming the Agent Sandbox: Isolating Agents on Kubernetes
 
 ## Description (Sessionize field, max 1,000 characters)
 

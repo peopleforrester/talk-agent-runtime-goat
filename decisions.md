@@ -23,3 +23,7 @@ replays the 2026 escape classes against agent-sandbox, so Concept A stands. Abst
 follows the bakeoff and BurritoBot packets: second-person opening scene, live naive versus
 hardened demo, CNCF projects with maturity, committee notes, and an unsubmitted source
 table. Track: Security. Format: 30-minute session.
+
+## 2026-10-11T15:12:21Z · 1.2 · Talk title corrected
+
+The title is "Red Teaming the Agent Sandbox: Isolating Agents on Kubernetes". The earlier "Red: Taming the Agent Sandbox" was a mistranscription; prior entries keep the old string because this log is append-only.
