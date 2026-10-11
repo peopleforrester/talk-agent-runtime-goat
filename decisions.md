@@ -39,3 +39,7 @@ Michael chose "Clearing the Runtime Confusion: Finding the Ultimate Runtime", re
 ## 2026-10-11T15:57:24Z · 1.2 · Title changed to the GOAT framing
 
 Michael chose "Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT?". The title is intentionally ironic: the talk argues there is no single best runtime and no single sufficient layer. Value to the community now states that up front.
+
+## 2026-10-11T16:00:43Z · 1.2 · GitHub repo renamed
+
+peopleforrester/talk-redteaming renamed to peopleforrester/talk-agent-runtime-goat to match the title. Local folder unchanged. Still private.
