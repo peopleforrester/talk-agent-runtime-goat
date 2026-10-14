@@ -1,8 +1,8 @@
 # KubeCon + CloudNativeCon EU 2027, Barcelona: Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT?
 
-Status: draft v6, runtime bake-off, not submitted. Description is 998 characters against the 1,000-character Sessionize limit. Target: KubeCon + CloudNativeCon EU 2027, Barcelona,
+Status: submitted on Sessionize before the 2026-10-11 close (confirmed by Michael 2026-10-14). This file holds draft v6, the last version on disk, runtime bake-off. Description is 998 characters against the 1,000-character Sessionize limit. Target: KubeCon + CloudNativeCon EU 2027, Barcelona,
 2027-03-15 to 18. Track: Security. Format: 30-minute session presentation. Speaker:
-Michael Forrester. CFP closes 2026-10-11, 23:59 CEST.
+Michael Forrester. CFP closed 2026-10-11, 23:59 CEST. Notifications 2026-12-07.
 
 ## Title
 

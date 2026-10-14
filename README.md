@@ -4,11 +4,16 @@ Working repo for Michael Forrester's third KubeCon + CloudNativeCon Europe 2027
 (Barcelona) submission. This repo is the primary home for the agent-substrate talk:
 research, abstract, demo, and deck.
 
-**Working thesis:** none of the 2026 coding-agent sandbox escapes broke a hypervisor.
-They went around the sandbox through config files, symlinks, Docker sockets,
-allowlisted commands, and DNS. The talk replays each technique class against a default
-and a hardened kubernetes-sigs/agent-sandbox deployment and scores which CNCF layer
-stopped, detected, or missed each one (Concept A in the research).
+**Status:** submitted on Sessionize for the main CFP (closed 2026-10-11). Notifications
+are due 2026-12-07.
+
+**Working thesis:** a runtime bake-off. Claude Code runs in kubernetes-sigs/agent-sandbox
+on runc, gVisor, and Kata microVMs (QEMU and Firecracker). Each runtime faces the public
+2026 coding-agent escapes, which went around the isolation boundary through config
+files, symlinks, Docker sockets, allowlisted commands, and DNS, plus patched kernel and
+runtime CVEs that go through it. A scoreboard marks each attack stopped, detected, or
+missed, first with the runtime alone and then with Kyverno, Cilium, and Falco added. The
+title is ironic: no single runtime or layer stops everything.
 
 Sibling talks, kept separate in scope:
 
@@ -36,7 +41,8 @@ Sibling talks, kept separate in scope:
 | `research/2026-10-10-competing-talks.md` | Competing talks March 2026 to March 2027 and the overlap matrix by angle |
 | `research/2026-10-10-stack-and-talk-ideas-summary.md` | One-page summary of the stack and the five talk ideas |
 | `research/2026-10-11-verification.md` | Primary-source recheck of every claim the abstract uses; supersedes the 2026-10-10 files where they disagree |
-| `abstract/kubecon-eu-2027-session.md` | Session proposal: title, abstract, benefits, projects, committee notes, unsubmitted source table |
+| `abstract/kubecon-eu-2027-session.md` | Session proposal: title, abstract, benefits, projects, committee notes, unsubmitted source table (submitted as draft v6) |
+| `abstract/sessionize-fields.md` | The same proposal in Sessionize form field order |
 | `PROJECT_STATE.md` | Current phase, open decisions, next steps |
 | `decisions.md` | Append-only decision log |
 

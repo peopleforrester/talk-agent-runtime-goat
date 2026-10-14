@@ -1,4 +1,4 @@
-# Project State: red-teaming-the-agent-sandbox
+# Project State: talk-agent-runtime-goat
 
 Phase: 1.2 Plan
 Approved: pending
@@ -18,28 +18,33 @@ Approved: pending
 None yet.
 
 ## Current Plan
-Talk: "Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT?", KubeCon + CloudNativeCon EU 2027, Barcelona.
-Concept A from `research/2026-10-10-cfp-landscape-and-concepts.md`: replay the 2026
-coding-agent escape classes (config files, symlinks, Docker socket, allowlisted
-commands, DNS exfiltration) against a default and a hardened agent-sandbox, and score
-each CNCF layer as stopped, detected, or missed. Likely track: Security.
+Talk: "Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT?", KubeCon +
+CloudNativeCon EU 2027, Barcelona, 2027-03-15 to 18. Security track, 30-minute session.
 
-Open decisions for Michael:
-1. Track: Security or Agentic AI.
-2. Co-presenter, if any (end user or agent-sandbox maintainer).
+Abstract submitted on Sessionize before the main CFP closed (2026-10-11 23:59 CEST),
+confirmed by Michael 2026-10-14. Submitted text is draft v6 in
+`abstract/kubecon-eu-2027-session.md` and `abstract/sessionize-fields.md`.
+
+Talk shape: runtime bake-off. Claude Code in kubernetes-sigs/agent-sandbox on runc,
+gVisor, and Kata (QEMU, Firecracker), replaying the 2026 coding-agent escapes plus patched
+through-the-boundary CVEs. Scoreboard of stopped, detected, or missed per attack, first
+runtime alone, then with Kyverno, Cilium FQDN egress, and Falco. Harness, SandboxTemplates,
+policies, and raw results to be published in a public repo before the talk.
 
 Next steps:
-1. Michael reviews `abstract/kubecon-eu-2027-session.md` (draft v1) and submits on
-   Sessionize by 2026-10-11 23:59 CEST.
-2. Research revalidated 2026-10-11: `research/2026-10-11-verification.md` supersedes the
-   2026-10-10 files wherever they disagree.
+1. Wait for CFP notification, due 2026-12-07.
+2. On acceptance, plan the harness build (Phase 1.2 for the demo work).
+3. Optional: Concept B (warm pool as credential cache) for a co-located event; that CFP
+   closes 2026-10-18 23:59 CEST.
 
 ## Branch & Tests
 - Branch: staging
-- Working tree: clean after the research import commit
+- Working tree: clean after the submission-status commit
 - Last CI: none configured
 
 ## Phase History
 - 2026-10-10T23:08:00Z 1.1 · repo initialized, research imported
 - 2026-10-10T23:08:00Z 1.1 → 1.2 research complete, planning the abstract
 - 2026-10-11T00:30:00Z 1.2 · research revalidated, abstract draft v1 written
+- 2026-10-11T16:00:43Z 1.2 · reframed as runtime bake-off, retitled, abstract at draft v6
+- 2026-10-14T21:15:19Z 1.2 · abstract confirmed submitted; awaiting notification

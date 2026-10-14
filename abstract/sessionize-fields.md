@@ -1,6 +1,6 @@
 # KubeCon + CloudNativeCon EU 2027, Barcelona: Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT? (Sessionize fields)
 
-Status: draft v6, runtime bake-off, 30-minute session, not submitted. Field order follows the Sessionize form. Description limit: 1,000 characters (this text is 998). Source: abstract/kubecon-eu-2027-session.md in peopleforrester/talk-agent-runtime-goat.
+Status: submitted on Sessionize before the 2026-10-11 close (confirmed by Michael 2026-10-14). Draft v6, runtime bake-off, 30-minute session. Field order follows the Sessionize form. Description limit: 1,000 characters (this text is 998). Source: abstract/kubecon-eu-2027-session.md in peopleforrester/talk-agent-runtime-goat.
 
 ## Session Title
 

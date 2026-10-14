@@ -43,3 +43,7 @@ Michael chose "Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT?"
 ## 2026-10-11T16:00:43Z · 1.2 · GitHub repo renamed
 
 peopleforrester/talk-redteaming renamed to peopleforrester/talk-agent-runtime-goat to match the title. Local folder unchanged. Still private.
+
+## 2026-10-14T21:15:19Z · 1.2 · Abstract submitted; repo visibility recorded
+
+Michael confirmed the session was submitted on Sessionize before the main CFP closed (2026-10-11 23:59 CEST). The abstract files, README, and PROJECT_STATE.md now say so. The README thesis and PROJECT_STATE plan were brought in line with the runtime bake-off framing. The GitHub repo reads as PUBLIC as of 2026-10-14, which supersedes "Still private" in the 2026-10-11 entry.
