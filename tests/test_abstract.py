@@ -86,5 +86,14 @@ class IdentityTest(unittest.TestCase):
         self.assertIn("talks-knowledge", README.read_text(encoding="utf-8"))
 
 
+class GateTest(unittest.TestCase):
+    def test_agents_md_declares_or_explains_the_e2e_command(self):
+        lines = (ROOT / "AGENTS.md").read_text(encoding="utf-8").splitlines()
+        declared = [l for l in lines if re.fullmatch(r"E2E command: `[^`]+`", l)]
+        explained = [l for l in lines if l.startswith("No E2E command yet: ")]
+        self.assertEqual(len(declared) + len(explained), 1,
+                         "AGENTS.md must declare one E2E command or say why it has none")
+
+
 if __name__ == "__main__":
     unittest.main()
