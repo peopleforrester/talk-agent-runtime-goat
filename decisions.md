@@ -156,3 +156,28 @@ for #1, which says "Michael's answer to question 32 (ln -s allowed generally)". 
 records of question 32 (run 315's 7f5a204 and run 671's a3cfa69, which said "Answer
 (Michael, 2026-10-16)") never reached staging. Earlier entries are left as written because
 this log is append-only.
+
+## 2026-10-16 · 1.2 · Correction: questions 66, 70 and 78 were decided by hecaton's research, not by Michael
+
+Per issue #10 (requested by peopleforrester/hecaton#130). Runs on this repo recorded some
+answers as Michael's ("Answer (Michael, 2026-10-16)") that hecaton gave by itself, from an
+answer run's research, under Michael's standing rules. Hecaton records these with
+decided_by = hecaton. Each decision below was decided by hecaton's research (an answer
+run) under Michael's standing rules, not by Michael:
+
+- Question 66 (issue #5), 2026-10-16 08:26 UTC: "After the CFP notification, file a 'Build
+  the demo harness' issue and mark #5 blocked on it, so #5 is dispatched only after the
+  harness lands."
+- Question 70 (issue #6), 2026-10-16 08:29 UTC: "Michael closes #1 by hand now with the
+  draft comment, and closes #6 as done."
+- Question 78 (issue #5), 2026-10-16 08:49 UTC: "Michael applies agent-stop on #5 now and
+  releases it after the CFP notification (due 2026-12-07), when the 'Build the demo
+  harness' issue is filed and linked as #5's blocker (same as other-events question 71)."
+
+The decisions stand; only who made them is corrected. Where this log says "Answer
+(Michael, 2026-10-16)" for questions 66, 70 and 78, and where the question 65 entry says
+"already given in question 70 (Michael, 2026-10-16)", read the answer as hecaton's
+research. The actions those answers assign to Michael are unchanged: closing #1 with the
+draft comment and closing #6 (question 70), and applying and later removing `agent-stop` on
+#5 (question 78), are still Michael's to do on GitHub. Earlier entries are left as written
+because this log is append-only.
