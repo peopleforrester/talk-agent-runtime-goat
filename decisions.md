@@ -59,3 +59,22 @@ Issue #3 asks for an `E2E command:` line where the repo has end-to-end or integr
 ## 2026-10-16 · 1.2 · E2E declaration waits for the demo harness; the sweep will not re-file
 
 Issue #5 asks for the `No E2E command yet:` line to become `E2E command: ` plus the harness command once the demo harness exists. It does not exist yet (its build is planned after the CFP notification, due 2026-12-07), so the line stays and #5 stays open until the harness lands. The sweep that filed #3 is the dispatcher's heavy gate (`hecaton.run.mainline._ask_for_e2e`). It does not read the explanation line: `command_line` matches only a line that starts with the label `E2E command:` and a backticked command, so `No E2E command yet:` declares nothing, and the light `Test command:` keeps gating `main`. It files at most one `e2e` issue per repo ever (`_open_gate_issue(..., ever=True)`), so it will not file #3 again, whatever that line says.
+
+## 2026-10-16 · 1.2 · question 70: Michael closes #1 by hand; #6 closes as done
+
+Question 70 (run 693 on issue #6): #6 asks a run to close #1 with a comment naming 96e7985
+and 6750229, but governance forbids executors from sending or publishing, so no dispatched
+run can post it. Who closes #1, and should that wait until both commits reach main?
+
+Answer (Michael, 2026-10-16): "Michael closes #1 by hand now with the draft comment, and
+closes #6 as done."
+
+What it changes: closing #1 does not wait for main. That matches the fleet convention: when
+a run merges into staging with outcome done, the dispatcher closes the issue straight away
+and main follows once staging passes the heavy gate. The closing comment is the draft from
+run 693: "Closing: the fleet standard for this talk repo is in place on staging. 96e7985
+states the repo identity in README.md and AGENTS.md and points at talks-knowledge (source of
+truth for the talk) and conference-knowledge (event state). 6750229 adds CLAUDE.md as a
+symlink to AGENTS.md, checked by IdentityTest. Michael's answer to question 32 (ln -s
+allowed generally) is why the symlink was kept rather than replaced." No repo file changes
+for #1 or #6 beyond this entry; the GitHub writes are Michael's.

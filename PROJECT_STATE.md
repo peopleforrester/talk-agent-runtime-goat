@@ -52,3 +52,4 @@ Next steps:
 - 2026-10-16 1.2 · heavy gate (issue #3): no E2E tests exist yet, so AGENTS.md states there is no E2E command until the demo harness lands
 - 2026-10-16 1.2 · CLAUDE.md symlink (issue #4): CLAUDE.md links to AGENTS.md, checked by IdentityTest
 - 2026-10-16 1.2 · E2E line (issue #5): no harness yet, so the `No E2E command yet:` line stays; the dispatcher's E2E sweep files once per repo and will not re-file #3
+- 2026-10-16 1.2 · closing #1 (issue #6, question 70): Michael closes #1 by hand with a comment naming 96e7985 and 6750229; no wait for main
