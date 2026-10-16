@@ -59,3 +59,21 @@ Issue #3 asks for an `E2E command:` line where the repo has end-to-end or integr
 ## 2026-10-16 · 1.2 · E2E declaration waits for the demo harness; the sweep will not re-file
 
 Issue #5 asks for the `No E2E command yet:` line to become `E2E command: ` plus the harness command once the demo harness exists. It does not exist yet (its build is planned after the CFP notification, due 2026-12-07), so the line stays and #5 stays open until the harness lands. The sweep that filed #3 is the dispatcher's heavy gate (`hecaton.run.mainline._ask_for_e2e`). It does not read the explanation line: `command_line` matches only a line that starts with the label `E2E command:` and a backticked command, so `No E2E command yet:` declares nothing, and the light `Test command:` keeps gating `main`. It files at most one `e2e` issue per repo ever (`_open_gate_issue(..., ever=True)`), so it will not file #3 again, whatever that line says.
+
+## 2026-10-16 · 1.2 · question 32: ln -s is allowed generally; the CLAUDE.md symlink stays in scope
+
+Question 32 (run 306 on issue #1): the only change left in #1 was the CLAUDE.md symlink to
+AGENTS.md, and the executor's permission policy auto-denied `ln -s` in runs 298 and 303, so
+run 303 made no commit and failed the manifest gate. How should the item be closed out?
+
+Answer (Michael, 2026-10-16): "Allow it generally: hecaton is switching every run to all
+shell commands except sudo, su and pushing branches (in progress tonight). Re-dispatch #1
+once that is deployed; ln -s will then be allowed."
+
+What it changes: the symlink stays in scope as specified; neither a plain CLAUDE.md holding
+`@AGENTS.md` nor "deliberately absent" was chosen. The rollout reached runs on 2026-10-16:
+run 616 added the symlink under follow-up issue #4 (commit 6750229, merged into staging as
+a9ac285) and run 671 confirmed `ln -s` is permitted. With 96e7985, every item of the fleet
+standard in #1 is on staging, so what remains for #1 is closing it with a comment naming
+both commits. Run 315 first recorded this answer in 7f5a204, which was lost to a rebase
+conflict and never reached staging; this entry replaces it.
