@@ -78,3 +78,7 @@ truth for the talk) and conference-knowledge (event state). 6750229 adds CLAUDE.
 symlink to AGENTS.md, checked by IdentityTest. Michael's answer to question 32 (ln -s
 allowed generally) is why the symlink was kept rather than replaced." No repo file changes
 for #1 or #6 beyond this entry; the GitHub writes are Michael's.
+
+## 2026-10-16 · 1.2 · question 66: how #5 waits for the demo harness
+
+Michael's answer: after the CFP notification (due 2026-12-07), file a "Build the demo harness" issue and mark #5 blocked on it with GitHub's native `blocked by` relationship, so #5 is dispatched only after the harness lands. Until then #5 stays open and AGENTS.md keeps its `No E2E command yet:` line. Filing the harness issue is now a step after the notification, next to planning the harness build.
