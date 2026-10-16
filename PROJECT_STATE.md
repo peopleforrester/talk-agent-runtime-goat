@@ -34,6 +34,8 @@ policies, and raw results to be published in a public repo before the talk.
 Next steps:
 1. Wait for CFP notification, due 2026-12-07.
 2. On acceptance, plan the harness build (Phase 1.2 for the demo work).
+   After the notification, file a 'Build the demo harness' issue and mark #5 blocked
+   on it (GitHub's native blocked-by), per question 66.
 3. Optional: Concept B (warm pool as credential cache) for a co-located event; that CFP
    closes 2026-10-18 23:59 CEST.
 
@@ -53,3 +55,4 @@ Next steps:
 - 2026-10-16 1.2 · CLAUDE.md symlink (issue #4): CLAUDE.md links to AGENTS.md, checked by IdentityTest
 - 2026-10-16 1.2 · E2E line (issue #5): no harness yet, so the `No E2E command yet:` line stays; the dispatcher's E2E sweep files once per repo and will not re-file #3
 - 2026-10-16 1.2 · closing #1 (issue #6, question 70): Michael closes #1 by hand with a comment naming 96e7985 and 6750229; no wait for main
+- 2026-10-16 1.2 · #5 waits (question 66): after the CFP notification, file 'Build the demo harness' and mark #5 blocked on it
