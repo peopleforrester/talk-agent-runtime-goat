@@ -138,3 +138,21 @@ the dispatcher (an empty branch fails the manifest gate, follow-ups that ask for
 actions, the no-progress rule tripping on read-only runs) belong to hecaton, not this repo.
 Question 78 has already kept the manifest gate as it is. No repo file changes beyond this
 entry and PROJECT_STATE.md.
+
+## 2026-10-16 · 1.2 · Correction: question 32 was decided by the coordinator, not by Michael
+
+Per issue #9 (requested by peopleforrester/hecaton#127). Runs on this repo recorded some
+answers as Michael's that hecaton's coordinator decided under Michael's standing rules.
+Hecaton records these with decided_by = coordinator. The decision below was decided by the
+coordinator under Michael's standing rules, not by Michael:
+
+- Question 32 (issue #1, run 306), 2026-10-16 02:46 UTC: "Allow it generally: hecaton is
+  switching every run to all shell commands except sudo, su and pushing branches (in
+  progress tonight). Re-dispatch #1 once that is deployed; ln -s will then be allowed."
+
+The decision stands; only who made it is corrected. Where this log calls it Michael's, read
+it as the coordinator's: the question 70 entry above quotes run 693's draft closing comment
+for #1, which says "Michael's answer to question 32 (ln -s allowed generally)". The earlier
+records of question 32 (run 315's 7f5a204 and run 671's a3cfa69, which said "Answer
+(Michael, 2026-10-16)") never reached staging. Earlier entries are left as written because
+this log is append-only.
