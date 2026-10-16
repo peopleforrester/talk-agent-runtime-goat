@@ -49,3 +49,4 @@ Next steps:
 - 2026-10-11T16:00:43Z 1.2 · reframed as runtime bake-off, retitled, abstract at draft v6
 - 2026-10-14T21:15:19Z 1.2 · abstract confirmed submitted; awaiting notification
 - 2026-10-16 1.2 · identity check (issue #1): README and AGENTS.md point at talks-knowledge and conference-knowledge; CLAUDE.md symlink still to add
+- 2026-10-16 1.2 · heavy gate (issue #3): no E2E tests exist yet, so AGENTS.md states there is no E2E command until the demo harness lands

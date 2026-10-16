@@ -51,3 +51,7 @@ Michael confirmed the session was submitted on Sessionize before the main CFP cl
 ## 2026-10-16 · 1.2 · Repo identity and where things live
 
 Per issue #1, the fleet standard for a talk repo. talks-knowledge is the source of truth for the register, research index, abstracts, and talk scripts; conference-knowledge holds event state. README and AGENTS.md now say so. Where the abstract here and the one in talks-knowledge disagree, talks-knowledge wins. The README no longer calls this the "third" EU 2027 submission; the register owns that count, and the 2026-10-10 entry above keeps the old wording because this log is append-only.
+
+## 2026-10-16 · 1.2 · No E2E command until the demo harness exists
+
+Issue #3 asks for an `E2E command:` line where the repo has end-to-end or integration tests against real services. It has none: the only suite checks the abstract files, README, and AGENTS.md. Pointing the heavy gate at that suite or at a placeholder would claim coverage that does not exist, so AGENTS.md states that there is no E2E command yet and why, and a test holds it to either that statement or exactly one declared command. The demo harness, run against a real cluster, is where the first E2E command comes from.

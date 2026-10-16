@@ -6,6 +6,10 @@ GOAT?" by Michael Forrester, submitted to KubeCon + CloudNativeCon EU 2027, Barc
 
 Test command: `python3 -B -m unittest discover -s tests`
 
+No E2E command yet: the repo has no end-to-end or integration tests, only the file checks
+above. The demo harness, which will run the attacks against a real cluster, is the first
+thing that will need one; declare its heavy-gate command here when it lands.
+
 ## Rules
 
 - Work on `staging`; `main` only moves by promotion from `staging` after tests pass.
