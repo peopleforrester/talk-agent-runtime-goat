@@ -118,3 +118,23 @@ is filed and linked as #5's blocker with GitHub's native blocked-by, and only th
 harness lands. The manifest gate stays as it is, and no filler commits are made. The label
 is Michael's to set on GitHub; no repo file changes beyond this entry and
 PROJECT_STATE.md. AGENTS.md keeps its `No E2E command yet:` line until the harness exists.
+
+## 2026-10-16 · 1.2 · question 65: #1 is kept and closed by hand, as question 70 answered
+
+Question 65 (issue #7, filed when #1 reached step 6 of the failure ladder; research run
+671): what should happen to #1, whose work is all on staging (96e7985, and 6750229 via #4)
+but whose definition of done ends in closing the issue, which no executor run can do?
+Run 671 recommended keeping #1 (disposition keep) and closing it either through one fresh
+close-out run or by Michael by hand, and closing #6 alongside it.
+
+Answer: already given in question 70 (Michael, 2026-10-16): "Michael closes #1 by hand
+now with the draft comment, and closes #6 as done." That is run 671's option 2, so #7
+needs no new decision.
+
+What it changes: #1 is not re-dispatched, and no close-out run is made for it. The GitHub
+writes (closing #1 with the question 70 comment, closing #6) are Michael's. #1 stays
+`completed`, not `not planned`, because the identity check is done. Run 671's findings on
+the dispatcher (an empty branch fails the manifest gate, follow-ups that ask for GitHub
+actions, the no-progress rule tripping on read-only runs) belong to hecaton, not this repo.
+Question 78 has already kept the manifest gate as it is. No repo file changes beyond this
+entry and PROJECT_STATE.md.
