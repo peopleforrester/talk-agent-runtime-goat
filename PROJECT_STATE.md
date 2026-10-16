@@ -51,3 +51,4 @@ Next steps:
 - 2026-10-16 1.2 · identity check (issue #1): README and AGENTS.md point at talks-knowledge and conference-knowledge; CLAUDE.md symlink still to add
 - 2026-10-16 1.2 · heavy gate (issue #3): no E2E tests exist yet, so AGENTS.md states there is no E2E command until the demo harness lands
 - 2026-10-16 1.2 · CLAUDE.md symlink (issue #4): CLAUDE.md links to AGENTS.md, checked by IdentityTest
+- 2026-10-16 1.2 · E2E line (issue #5): no harness yet, so the `No E2E command yet:` line stays; the dispatcher's E2E sweep files once per repo and will not re-file #3

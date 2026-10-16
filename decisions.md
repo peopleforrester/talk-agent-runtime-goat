@@ -55,3 +55,7 @@ Per issue #1, the fleet standard for a talk repo. talks-knowledge is the source 
 ## 2026-10-16 · 1.2 · No E2E command until the demo harness exists
 
 Issue #3 asks for an `E2E command:` line where the repo has end-to-end or integration tests against real services. It has none: the only suite checks the abstract files, README, and AGENTS.md. Pointing the heavy gate at that suite or at a placeholder would claim coverage that does not exist, so AGENTS.md states that there is no E2E command yet and why, and a test holds it to either that statement or exactly one declared command. The demo harness, run against a real cluster, is where the first E2E command comes from.
+
+## 2026-10-16 · 1.2 · E2E declaration waits for the demo harness; the sweep will not re-file
+
+Issue #5 asks for the `No E2E command yet:` line to become `E2E command: ` plus the harness command once the demo harness exists. It does not exist yet (its build is planned after the CFP notification, due 2026-12-07), so the line stays and #5 stays open until the harness lands. The sweep that filed #3 is the dispatcher's heavy gate (`hecaton.run.mainline._ask_for_e2e`). It does not read the explanation line: `command_line` matches only a line that starts with the label `E2E command:` and a backticked command, so `No E2E command yet:` declares nothing, and the light `Test command:` keeps gating `main`. It files at most one `e2e` issue per repo ever (`_open_gate_issue(..., ever=True)`), so it will not file #3 again, whatever that line says.
