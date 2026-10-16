@@ -61,3 +61,4 @@ Next steps:
 - 2026-10-16 1.2 · #5 hold (question 78): Michael applies agent-stop on #5 until the notification; the blocked-by link to the harness issue then replaces it
 - 2026-10-16 1.2 · #1 ladder (issue #7, question 65): settled by question 70; #1 is kept, not re-dispatched, and closed by Michael by hand
 - 2026-10-16 1.2 · attribution (issue #9): question 32 was decided by the coordinator under Michael's standing rules, not by Michael; correction appended to decisions.md
+- 2026-10-16 1.2 · attribution (issue #10): questions 66, 70 and 78 were decided by hecaton's research under Michael's standing rules, not by Michael; correction appended to decisions.md
