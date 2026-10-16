@@ -51,3 +51,7 @@ Michael confirmed the session was submitted on Sessionize before the main CFP cl
 ## 2026-10-16 · 1.2 · Repo identity and where things live
 
 Per issue #1, the fleet standard for a talk repo. talks-knowledge is the source of truth for the register, research index, abstracts, and talk scripts; conference-knowledge holds event state. README and AGENTS.md now say so. Where the abstract here and the one in talks-knowledge disagree, talks-knowledge wins. The README no longer calls this the "third" EU 2027 submission; the register owns that count, and the 2026-10-10 entry above keeps the old wording because this log is append-only.
+
+## 2026-10-16 · 1.2 · question 32: how the CLAUDE.md symlink gets made
+
+The `CLAUDE.md` -> `AGENTS.md` symlink is the last item of issue #1. Executor runs 298, 303 and 306 could not create it because their permission policy denied `ln -s`. Michael's answer: allow it generally. hecaton is switching every run to all shell commands except sudo, su and pushing branches, and #1 is re-dispatched once that is deployed, at which point `ln -s` is allowed. What it changes: the symlink stays in scope as specified, not recorded as deliberately absent, and no plain-file `CLAUDE.md` substitute is used. In run 315 `ln -s` was still denied, so the change had not reached that run, and the link waits for the next dispatch after the rollout.
