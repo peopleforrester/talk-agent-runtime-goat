@@ -75,5 +75,16 @@ class LayoutTest(unittest.TestCase):
                 self.assertTrue((ROOT / rel).is_file(), f"{rel} is listed but missing")
 
 
+class IdentityTest(unittest.TestCase):
+    def test_agents_md_says_where_things_live(self):
+        where = section(ROOT / "AGENTS.md", "Where things live")
+        self.assertIn("talks-knowledge", where)
+        self.assertIn("talks/register.md", where)
+        self.assertIn("conference-knowledge", where)
+
+    def test_readme_points_at_talks_knowledge(self):
+        self.assertIn("talks-knowledge", README.read_text(encoding="utf-8"))
+
+
 if __name__ == "__main__":
     unittest.main()
