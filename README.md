@@ -64,7 +64,8 @@ conference-knowledge is authoritative for these. This table is a snapshot.
 | `abstract/kubecon-eu-2027-session.md` | Session proposal: title, abstract, benefits, projects, committee notes, unsubmitted source table (submitted as draft v6) |
 | `abstract/sessionize-fields.md` | The same proposal in Sessionize form field order |
 | `AGENTS.md` | Repo rules for coding agents, test command, where things live |
-| `tests/test_abstract.py` | Checks title agreement, the Sessionize description limit, this table, and the talks-knowledge pointers |
+| `CLAUDE.md` | Symlink to `AGENTS.md`, so Claude Code loads the same rules |
+| `tests/test_abstract.py` | Checks title agreement, the Sessionize description limit, this table, the talks-knowledge pointers, and the `CLAUDE.md` symlink |
 | `PROJECT_STATE.md` | Current phase, open decisions, next steps |
 | `decisions.md` | Append-only decision log |
 

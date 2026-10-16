@@ -85,6 +85,9 @@ class IdentityTest(unittest.TestCase):
     def test_readme_points_at_talks_knowledge(self):
         self.assertIn("talks-knowledge", README.read_text(encoding="utf-8"))
 
+    def test_claude_md_links_to_agents_md(self):
+        self.assertEqual((ROOT / "CLAUDE.md").readlink(), Path("AGENTS.md"))
+
 
 class GateTest(unittest.TestCase):
     def test_agents_md_declares_or_explains_the_e2e_command(self):
