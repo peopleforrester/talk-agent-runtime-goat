@@ -95,3 +95,26 @@ is that dependencies are links, not text in the body). The scheduler then skips 
 that issue closes. Until the harness issue is filed and linked, nothing stops #5 from being
 dispatched again; such a run has nothing to change. AGENTS.md keeps its `No E2E command
 yet:` line until the harness exists, and no other repo file changes.
+
+## 2026-10-16 · 1.2 · question 78: Michael holds #5 with agent-stop until the CFP notification
+
+Question 78 (runs 722 and 726 on issue #5): the dispatcher's manifest gate fails any run
+that reaches validation with no commits after its base, and that is how run 722 failed.
+The question 66 decision says a run on #5 has nothing to change until a 'Build the demo
+harness' issue is filed after the CFP notification (due 2026-12-07) and linked as #5's
+blocker. Nothing stops dispatch until then, so each run on #5 either fails the gate or
+makes a filler commit to pass it, and the fleet rejected filler commits in other-events
+questions 64 and 71. How should #5 be held until the notification?
+
+Answer (Michael, 2026-10-16): "Michael applies agent-stop on #5 now and releases it after
+the CFP notification (due 2026-12-07), when the 'Build the demo harness' issue is filed and
+linked as #5's blocker (same as other-events question 71)."
+
+What it changes: this closes the gap question 66 left open. From now until the
+notification, #5 is held by Michael's `agent-stop` label rather than by the system, so the
+dispatcher stops re-running it. After the notification the 'Build the demo harness' issue
+is filed and linked as #5's blocker with GitHub's native blocked-by, and only then is
+`agent-stop` removed. The blocked-by link takes over the hold, so #5 is dispatched once the
+harness lands. The manifest gate stays as it is, and no filler commits are made. The label
+is Michael's to set on GitHub; no repo file changes beyond this entry and
+PROJECT_STATE.md. AGENTS.md keeps its `No E2E command yet:` line until the harness exists.
