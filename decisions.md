@@ -47,3 +47,7 @@ peopleforrester/talk-redteaming renamed to peopleforrester/talk-agent-runtime-go
 ## 2026-10-14T21:15:19Z · 1.2 · Abstract submitted; repo visibility recorded
 
 Michael confirmed the session was submitted on Sessionize before the main CFP closed (2026-10-11 23:59 CEST). The abstract files, README, and PROJECT_STATE.md now say so. The README thesis and PROJECT_STATE plan were brought in line with the runtime bake-off framing. The GitHub repo reads as PUBLIC as of 2026-10-14, which supersedes "Still private" in the 2026-10-11 entry.
+
+## 2026-10-16 · 1.2 · Repo identity and where things live
+
+Per issue #1, the fleet standard for a talk repo. talks-knowledge is the source of truth for the register, research index, abstracts, and talk scripts; conference-knowledge holds event state. README and AGENTS.md now say so. Where the abstract here and the one in talks-knowledge disagree, talks-knowledge wins. The README no longer calls this the "third" EU 2027 submission; the register owns that count, and the 2026-10-10 entry above keeps the old wording because this log is append-only.

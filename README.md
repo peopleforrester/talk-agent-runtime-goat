@@ -1,11 +1,20 @@
 # Clearing the Runtime Confusion: Which Agent Runtime Is the GOAT?
 
-Working repo for Michael Forrester's third KubeCon + CloudNativeCon Europe 2027
-(Barcelona) submission. This repo is the primary home for the agent-substrate talk:
-research, abstract, demo, and deck.
+Working repo for Michael Forrester's KubeCon + CloudNativeCon Europe 2027 (Barcelona)
+submission. This repo is the primary home for the agent-substrate talk: research,
+abstract, demo, and deck. The talk register in `talks/talks-knowledge` lists it with
+Michael's other submissions.
+
+**Speaker:** Michael Forrester, solo. No co-speakers listed.
+
+**Target:** KubeCon + CloudNativeCon Europe 2027, Barcelona, 2027-03-15 to 18. Security
+track, 30-minute session.
 
 **Status:** submitted on Sessionize for the main CFP (closed 2026-10-11). Notifications
 are due 2026-12-07.
+
+**Built from:** the research in `research/` and the proposal in `abstract/`. The demo
+builds on the upstream kubernetes-sigs/agent-sandbox project.
 
 **Working thesis:** a runtime bake-off. Claude Code runs in kubernetes-sigs/agent-sandbox
 on runc, gVisor, and Kata microVMs (QEMU and Firecracker). Each runtime faces the public
@@ -22,7 +31,18 @@ Sibling talks, kept separate in scope:
 | Agentic guardrails (BurritoBot, with Whitney Lee) | `talks/Kubecon-NA-2026-Whitney-BurritoBot` | Admission policy and human approval. Here, admission gets one slide. |
 | Context store comparison (with Jeremy Morgan) | `talks/Databases-bakeoff-kubecon-eu-2027` | RAG and data stores. None of that here. |
 
+## Where things live
+
+| Repo | Holds |
+|---|---|
+| `talks/talks-knowledge` | Source of truth for the talks: the register (`talks/register.md`), the research index, and the abstracts and talk scripts |
+| `conferences/conference-knowledge` | Event state: dates, CFPs, acceptances |
+| This repo | The talk's own research, abstract drafts, and, once built, the demo harness and deck |
+
 ## Key dates (from the 2026-10-10 research, which cites the CNCF CFP page)
+
+conference-knowledge is authoritative for these. This table is a snapshot.
+
 
 | Item | Date |
 |---|---|
@@ -43,6 +63,8 @@ Sibling talks, kept separate in scope:
 | `research/2026-10-11-verification.md` | Primary-source recheck of every claim the abstract uses; supersedes the 2026-10-10 files where they disagree |
 | `abstract/kubecon-eu-2027-session.md` | Session proposal: title, abstract, benefits, projects, committee notes, unsubmitted source table (submitted as draft v6) |
 | `abstract/sessionize-fields.md` | The same proposal in Sessionize form field order |
+| `AGENTS.md` | Repo rules for coding agents, test command, where things live |
+| `tests/test_abstract.py` | Checks title agreement, the Sessionize description limit, this table, and the talks-knowledge pointers |
 | `PROJECT_STATE.md` | Current phase, open decisions, next steps |
 | `decisions.md` | Append-only decision log |
 
