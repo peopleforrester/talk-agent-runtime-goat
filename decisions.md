@@ -205,3 +205,38 @@ Michael's current short title, "AI Workforce Transformation Lead, FDE and AI-Nat
 Programs, Accenture LearnVantage" (personal-knowledge#60, mrf-knowledge#26), is noted
 beside the v6 bio in `abstract/kubecon-eu-2027-session.md`. The bio itself is left as the
 record of v6, because Sessionize takes the bio from the profile, not from that file.
+
+## 2026-10-19 · 1.2 · question 178: the lightning cut was submitted to Open Source SecurityCon on 2026-10-18
+
+Question 178 (issue #11): did Michael submit the 10-minute lightning version to the
+co-located Open Source SecurityCon before its CFP closed (2026-10-18 23:59 CEST), and if
+so, with what date, title and description?
+
+Answer, as given 2026-10-17: "Not yet, and it can't be known yet." The CFP was still open
+and the lightning version was drafted, not submitted. Keep `Submitted: unknown` and check
+again on 2026-10-19 for a Sessionize "Thank you for your submission" mail to
+michaelrishiforrester@gmail.com from the CNCF-hosted co-located events Sessionize sender.
+If that mail is there, take the submission date from it and the title and description
+from it or from the Sessionize dashboard, and use the "Submitted" option; if not, the
+answer is "Not submitted".
+
+Decided by hecaton's research under Michael's standing rules, not by Michael.
+
+What it changes: the 2026-10-19 check found the mail. CNCF-Hosted Co-located Events
+Europe 2027 (via Sessionize) <cncf-hosted-co-located-events-europe-2027@events.sessionize.com>
+wrote to michaelrishiforrester@gmail.com on Sun, 18 Oct 2026 16:27:40 +0000 (18:27 CEST):
+"We have received your submission titled Which Agent Runtime Is the GOAT? Coding-Agent
+Escapes Against runc, gVisor and Kata in Ten Minutes." That is before the CFP closed, so
+`abstract/securitycon-eu-2027-lightning.md` now says `Submitted: yes, 2026-10-18` and
+carries the title (98 characters) and description (674 characters) as submitted. The
+title is from the mail. The mail has no description and the dashboard cannot be opened
+from a run, so the description is talk 5 of the talks-knowledge field sheet
+(`abstracts/kubecon-eu-2027-colocated/sessionize-fields.md`), the text Michael entered
+from, unchecked against the dashboard. This supersedes the 2026-10-17 entry's "this repo
+keeps no copy": the submitted text is now frozen, and talks-knowledge still wins where the
+two disagree.
+
+The mail also gives the co-located dates: reviews begin 2026-10-22 and speaker
+notifications go out Monday 2026-12-14, a week after the main session's (2026-12-07). The
+open decision stays: if the main session is accepted, keep the lightning talk as a preview
+or withdraw it.

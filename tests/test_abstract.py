@@ -11,6 +11,7 @@ FIELDS = ROOT / "abstract" / "sessionize-fields.md"
 README = ROOT / "README.md"
 
 DESCRIPTION_LIMIT = 1000
+TITLE_LIMIT = 100
 
 
 def section(path, heading):
@@ -88,6 +89,18 @@ class LightningTest(unittest.TestCase):
         self.assertIn("talks-knowledge", where)
         self.assertIn("abstracts/kubecon-eu-2027-colocated/securitycon-runtime-goat-lightning.md",
                       where)
+
+    def test_submitted_title_within_sessionize_limit(self):
+        self.assertLessEqual(len(section(self.PATH, "Title as submitted")), TITLE_LIMIT)
+
+    def test_stated_lengths_match_actual(self):
+        where = section(self.PATH, "Where the abstract lives")
+        for heading, pattern in (("Title as submitted", r"\((\d+) characters, under"),
+                                 ("Description as submitted", r"entered from \((\d+) characters\)")):
+            with self.subTest(section=heading):
+                match = re.search(pattern, where)
+                self.assertIsNotNone(match, f"no stated length for '{heading}'")
+                self.assertEqual(int(match.group(1)), len(section(self.PATH, heading)))
 
 
 class IdentityTest(unittest.TestCase):

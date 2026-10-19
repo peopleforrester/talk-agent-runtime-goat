@@ -11,7 +11,9 @@ Michael's other submissions.
 track, 30-minute session.
 
 **Status:** submitted on Sessionize for the main CFP (closed 2026-10-11). Notifications
-are due 2026-12-07.
+are due 2026-12-07. A 10-minute lightning cut was submitted to the co-located Open Source
+SecurityCon on 2026-10-18; its notifications are due 2026-12-14
+(`abstract/securitycon-eu-2027-lightning.md`).
 
 **Built from:** the research in `research/` and the proposal in `abstract/`. The demo
 builds on the upstream kubernetes-sigs/agent-sandbox project.
@@ -63,10 +65,10 @@ conference-knowledge is authoritative for these. This table is a snapshot.
 | `research/2026-10-11-verification.md` | Primary-source recheck of every claim the abstract uses; supersedes the 2026-10-10 files where they disagree |
 | `abstract/kubecon-eu-2027-session.md` | Session proposal: title, abstract, benefits, projects, committee notes, unsubmitted source table (submitted as draft v6) |
 | `abstract/sessionize-fields.md` | The same proposal in Sessionize form field order |
-| `abstract/securitycon-eu-2027-lightning.md` | Lightning cut for the co-located Open Source SecurityCon: submission status and a pointer to its abstract in talks-knowledge |
+| `abstract/securitycon-eu-2027-lightning.md` | Lightning cut for the co-located Open Source SecurityCon: submitted 2026-10-18, with the title and description as submitted and a pointer to its abstract in talks-knowledge |
 | `AGENTS.md` | Repo rules for coding agents, test command, where things live |
 | `CLAUDE.md` | Symlink to `AGENTS.md`, so Claude Code loads the same rules |
-| `tests/test_abstract.py` | Checks title agreement, the Sessionize description limit, this table, the talks-knowledge pointers, the lightning cut's submission line, and the `CLAUDE.md` symlink |
+| `tests/test_abstract.py` | Checks title agreement, the Sessionize description limit, this table, the talks-knowledge pointers, the lightning cut's submission line and stated lengths, and the `CLAUDE.md` symlink |
 | `PROJECT_STATE.md` | Current phase, open decisions, next steps |
 | `decisions.md` | Append-only decision log |
 
