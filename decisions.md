@@ -204,7 +204,7 @@ acceptance raises one more decision: keep the lightning talk as a preview, or wi
 Michael's current short title, "AI Workforce Transformation Lead, FDE and AI-Native
 Programs, Accenture LearnVantage" (personal-knowledge#60, mrf-knowledge#26), is noted
 beside the v6 bio in `abstract/kubecon-eu-2027-session.md`. The bio itself is left as the
-record of v6, because Sessionize takes the bio from the profile, not from that file.
+record of v6, because Sessionize takes the bio from the speaker profile.
 
 ## 2026-10-19 · 1.2 · question 178: the lightning cut was submitted to Open Source SecurityCon on 2026-10-18
 
@@ -213,7 +213,7 @@ co-located Open Source SecurityCon before its CFP closed (2026-10-18 23:59 CEST)
 so, with what date, title and description?
 
 Answer, as given 2026-10-17: "Not yet, and it can't be known yet." The CFP was still open
-and the lightning version was drafted, not submitted. Keep `Submitted: unknown` and check
+and the lightning version was drafted and still unsubmitted. Keep `Submitted: unknown` and check
 again on 2026-10-19 for a Sessionize "Thank you for your submission" mail to
 michaelrishiforrester@gmail.com from the CNCF-hosted co-located events Sessionize sender.
 If that mail is there, take the submission date from it and the title and description

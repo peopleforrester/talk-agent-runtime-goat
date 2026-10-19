@@ -54,4 +54,4 @@ Sessionize takes the bio from the speaker profile. The field sheet had Michael r
 with the Accenture LearnVantage bio; his current short title is "AI Workforce
 Transformation Lead, FDE and AI-Native Programs, Accenture LearnVantage"
 (personal-knowledge#60, mrf-knowledge#26). The bio in `abstract/kubecon-eu-2027-session.md`
-is the older KodeKloud version and is not the one to use.
+is the older KodeKloud version; use the profile bio.
