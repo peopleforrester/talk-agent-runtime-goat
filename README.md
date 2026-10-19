@@ -63,9 +63,10 @@ conference-knowledge is authoritative for these. This table is a snapshot.
 | `research/2026-10-11-verification.md` | Primary-source recheck of every claim the abstract uses; supersedes the 2026-10-10 files where they disagree |
 | `abstract/kubecon-eu-2027-session.md` | Session proposal: title, abstract, benefits, projects, committee notes, unsubmitted source table (submitted as draft v6) |
 | `abstract/sessionize-fields.md` | The same proposal in Sessionize form field order |
+| `abstract/securitycon-eu-2027-lightning.md` | Lightning cut for the co-located Open Source SecurityCon: submission status and a pointer to its abstract in talks-knowledge |
 | `AGENTS.md` | Repo rules for coding agents, test command, where things live |
 | `CLAUDE.md` | Symlink to `AGENTS.md`, so Claude Code loads the same rules |
-| `tests/test_abstract.py` | Checks title agreement, the Sessionize description limit, this table, the talks-knowledge pointers, and the `CLAUDE.md` symlink |
+| `tests/test_abstract.py` | Checks title agreement, the Sessionize description limit, this table, the talks-knowledge pointers, the lightning cut's submission line, and the `CLAUDE.md` symlink |
 | `PROJECT_STATE.md` | Current phase, open decisions, next steps |
 | `decisions.md` | Append-only decision log |
 

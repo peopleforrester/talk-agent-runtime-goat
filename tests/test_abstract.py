@@ -75,6 +75,21 @@ class LayoutTest(unittest.TestCase):
                 self.assertTrue((ROOT / rel).is_file(), f"{rel} is listed but missing")
 
 
+class LightningTest(unittest.TestCase):
+    PATH = ROOT / "abstract" / "securitycon-eu-2027-lightning.md"
+
+    def test_states_whether_it_was_submitted(self):
+        lines = self.PATH.read_text(encoding="utf-8").splitlines()
+        stated = [l for l in lines if re.match(r"Submitted: (yes|no|unknown)\b", l)]
+        self.assertEqual(len(stated), 1, "lightning file must say once whether it was submitted")
+
+    def test_points_at_the_talks_knowledge_abstract(self):
+        where = section(self.PATH, "Where the abstract lives")
+        self.assertIn("talks-knowledge", where)
+        self.assertIn("abstracts/kubecon-eu-2027-colocated/securitycon-runtime-goat-lightning.md",
+                      where)
+
+
 class IdentityTest(unittest.TestCase):
     def test_agents_md_says_where_things_live(self):
         where = section(ROOT / "AGENTS.md", "Where things live")

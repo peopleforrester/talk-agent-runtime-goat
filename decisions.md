@@ -181,3 +181,27 @@ research. The actions those answers assign to Michael are unchanged: closing #1 
 draft comment and closing #6 (question 70), and applying and later removing `agent-stop` on
 #5 (question 78), are still Michael's to do on GitHub. Earlier entries are left as written
 because this log is append-only.
+
+## 2026-10-17 · 1.2 · Lightning cut for Open Source SecurityCon tracked here, abstract kept in talks-knowledge
+
+Per issue #11 (requested by talks-knowledge,
+`abstracts/kubecon-eu-2027-colocated/securitycon-runtime-goat-lightning.md`, on main
+2026-10-17). Michael is considering a 10-minute lightning cut of this talk for the
+co-located Open Source SecurityCon. Same runtimes, attack catalog, scoring and policy layer
+as draft v6, one speaker. The co-located CFP closes 2026-10-18 23:59 CEST.
+
+Decision: `abstract/securitycon-eu-2027-lightning.md` records whether the lightning
+version was submitted. The lightning text itself stays in talks-knowledge, which is the
+source of truth and wins where the two disagree, so this repo keeps no copy that could
+drift. As of 2026-10-17 it is drafted and not submitted; the file says `Submitted:
+unknown` until Michael says yes or no. The run that recorded this (1835) could not read the
+talks-knowledge file, so nothing here restates its wording.
+
+If it is submitted, the submission date, title and description go in the lightning file
+and a new entry here. Once the main session's notification arrives (due 2026-12-07), an
+acceptance raises one more decision: keep the lightning talk as a preview, or withdraw it.
+
+Michael's current short title, "AI Workforce Transformation Lead, FDE and AI-Native
+Programs, Accenture LearnVantage" (personal-knowledge#60, mrf-knowledge#26), is noted
+beside the v6 bio in `abstract/kubecon-eu-2027-session.md`. The bio itself is left as the
+record of v6, because Sessionize takes the bio from the profile, not from that file.

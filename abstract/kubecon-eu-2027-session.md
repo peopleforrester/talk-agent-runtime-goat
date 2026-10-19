@@ -83,5 +83,6 @@ Open items:
 - The CFP page asks for the description in third-person sentences. The draft opens in second person ("Your coding agent") as the house style does and refers to Michael in the third person. Decide before pasting.
 - Prior recordings: the speaker profile already lists both KubeCon EU 2026 Amsterdam talks on the CNCF YouTube channel.
 - Speaker bio: Sessionize uses the profile bio (Accenture LearnVantage). The bio in this file is the older KodeKloud version and is not pasted.
+  Michael's current short title is "AI Workforce Transformation Lead, FDE and AI-Native Programs, Accenture LearnVantage" (personal-knowledge#60, mrf-knowledge#26). The bio above stays as the v6 record.
 - Co-presenter: none listed. The format allows two.
 - Responsible replay: only public techniques, against patched releases or isolated lab clusters with pinned vulnerable versions. Coordinate anything new with the affected project before March.

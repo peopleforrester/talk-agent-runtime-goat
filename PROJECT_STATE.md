@@ -40,10 +40,15 @@ Next steps:
    (question 78).
 3. Optional: Concept B (warm pool as credential cache) for a co-located event; that CFP
    closes 2026-10-18 23:59 CEST.
+4. Lightning cut for the co-located Open Source SecurityCon (issue #11): drafted in
+   talks-knowledge, CFP closes 2026-10-18 23:59 CEST. Record whether Michael submitted it
+   in `abstract/securitycon-eu-2027-lightning.md` (now `Submitted: unknown`) and
+   `decisions.md`. If it was submitted and the main session is accepted (2026-12-07),
+   decide whether it stays as a preview or is withdrawn.
 
 ## Branch & Tests
 - Branch: staging
-- Working tree: clean after the submission-status commit
+- Working tree: clean after the lightning-cut status commit
 - Last CI: none configured
 
 ## Phase History
@@ -62,3 +67,4 @@ Next steps:
 - 2026-10-16 1.2 · #1 ladder (issue #7, question 65): settled by question 70; #1 is kept, not re-dispatched, and closed by Michael by hand
 - 2026-10-16 1.2 · attribution (issue #9): question 32 was decided by the coordinator under Michael's standing rules, not by Michael; correction appended to decisions.md
 - 2026-10-16 1.2 · attribution (issue #10): questions 66, 70 and 78 were decided by hecaton's research under Michael's standing rules, not by Michael; correction appended to decisions.md
+- 2026-10-17 1.2 · lightning cut (issue #11): `abstract/securitycon-eu-2027-lightning.md` tracks the Open Source SecurityCon submission; abstract stays in talks-knowledge; not submitted as of 2026-10-17, awaiting Michael
